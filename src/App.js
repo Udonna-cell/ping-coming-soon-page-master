@@ -46,13 +46,9 @@ function Header() {
 
     if (emailRegex.test(input) && input !== "") {
       setIsError(false);
-      console.log("Valid email address");
     } else {
       setIsError(true);
-      console.log("Invalid email address");
     }
-
-    alert(input);
   };
   let email = (e) => {
     setInput(e.target.value);
